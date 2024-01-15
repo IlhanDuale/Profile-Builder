@@ -1,5 +1,5 @@
-// TODO: Write code to define and export the Employee class// Employee.js
-/// Employee.js
+// TODO: Write code to define and export the Employee class
+// Employee.js
 export default class Employee {
     constructor(name, id, email) {
         this.name = name;

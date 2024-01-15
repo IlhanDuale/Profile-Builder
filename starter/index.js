@@ -6,7 +6,8 @@ import path from "path";
 import fs from "fs";
 import { promisify } from 'util';
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(new URL('.',
+    import.meta.url).pathname, 'output');
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 import render from "./src/page-template.js";

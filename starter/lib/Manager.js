@@ -1,5 +1,6 @@
 // TODO: Write code to define and export the Manager class. HINT: This class should inherit from Employee.
 /// Manager.js
+// Manager.js
 import Employee from './Employee.js';
 
 export default class Manager extends Employee {
@@ -12,7 +13,7 @@ export default class Manager extends Employee {
         return 'Manager';
     }
 
-    getOffice() {
+    getOfficeNumber() { // Updated method name to match the prompt
         return this.officeNumber;
     }
 }
