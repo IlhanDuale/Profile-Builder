@@ -7,11 +7,6 @@
 ## Description
 This is a command-line application that helps you generate a team profile by prompting you to enter information about team members, including managers, engineers, and interns. The application uses Node.js and Inquirer to gather the necessary details and then generates an HTML file that displays a formatted team profile.
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-
 ## Installation
 To install the project, run the command: npm install
 
