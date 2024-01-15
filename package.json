@@ -1,15 +1,22 @@
 {
-  "name": "profile-generator",
-  "version": "1.0.0",
-  "description": "## Your Task",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "inquirer": "^9.2.12"
-  }
+    "name": "profile-generator",
+    "version": "1.0.0",
+    "description": "## Your Task",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^9.2.12"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.23.7",
+        "@babel/preset-env": "^7.23.8",
+        "babel-jest": "^29.7.0",
+        "jest": "^29.7.0"
+    }
 }
