@@ -1,4 +1,3 @@
-// page-template.js
 function generateManager(manager) {
     return `
         <div class="card employee-card">
@@ -60,6 +59,7 @@ export default function generatePage(team) {
         team
         .filter(employee => employee.getRole() === "Manager")
         .map(manager => generateManager(manager))
+        .join("")
     );
     html.push(
         team
@@ -78,10 +78,52 @@ export default function generatePage(team) {
         <!DOCTYPE html>
         <html lang="en">
         <head>
-            <!-- Your head content here -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>My Team</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                }
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    padding: 20px;
+                }
+                .card {
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                    overflow: hidden;
+                    margin: 10px;
+                    width: 300px;
+                    background-color: #fff;
+                }
+                .card-header {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                }
+                .card-body {
+                    padding: 20px;
+                }
+                .list-group-item {
+                    list-style: none;
+                    margin: 10px 0;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                }
+            </style>
         </head>
         <body>
-            <!-- Your body content here -->
+            <div class="container">
+                ${html.join("")}
+            </div>
         </body>
         </html>
     `;
