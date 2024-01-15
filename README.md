@@ -1,4 +1,4 @@
-# Profile Generator
+# Profile-Builder
 
 <img width="1372" alt="Screenshot 2024-01-15 at 11 40 21" src="https://github.com/IlhanDuale/Profile-Generator/assets/88343208/74c9227b-a83d-4ed6-a0d1-be9ffb8f5de3">
 
@@ -30,7 +30,7 @@ There are no specific tests provided for this project.
 
 ## Questions
 If you have any questions or issues, feel free to reach out:
-- GitHub: [YourGitHubUsername](https://github.com/YourGitHubUsername)
+- GitHub: https://github.com/IlhanDuale
 - Email: dualeilhan@gmail.com
 
 
